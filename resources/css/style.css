@@ -65,6 +65,9 @@ h2:after{
     height: 2px;
     margin-top: 30px;
 }
+
+/*----Paragraphs -----*/
+
 .long-copy{
     line-height: 145%;
     width: 70%;
@@ -76,6 +79,16 @@ h2:after{
 .box p{
     line-height: 145%;
     font-size: 90%;
+}
+
+/*---- Icons -----*/
+.icon-big{
+    font-size: 300%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+    
+    
 }
 
 /*---- Buttons -----*/
