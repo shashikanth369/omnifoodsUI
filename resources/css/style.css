@@ -203,10 +203,14 @@ header{
 }
 
 	
-}
+
 .logo-black{
 	display: none;
 }
+
+/*-------------------------------*/
+/*---Main Navigation-------*/
+/*-------------------------------*/
 .main-nav{
    float: right;
     list-style: none;
@@ -231,6 +235,23 @@ header{
 .main-nav li a:active{
   border-bottom: 2px solid #e67e22;   
 }
+
+
+/*---Responsive Nav-------*/
+.mobile-nav-icon{
+	float: right;
+	margin-top: 30px;
+	cursor: pointer;
+	display: none;
+}
+
+
+.mobile-nav-icon i{
+	font-size: 200%;
+	color: #fff;
+	
+}
+
 
 /***** Sticky******/
 
