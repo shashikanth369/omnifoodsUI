@@ -16,7 +16,7 @@ html, body{
     text-rendering: optimizeLegibility;   
 	overflow-x: hidden;
 }
-.clear-fix{zoom: 1}
+.clear-fix{zoom: 1;}
 .clear-fix:after{
     content: ".";
     display: block;
@@ -193,12 +193,19 @@ header{
     transform: translate(-50%, -50%);
 }
 
-.logo{
+.logo
+{
     height: 100px;
     width: auto;
     float: left;
    margin-right: 100px;
     margin-top: 20px;
+}
+
+	
+}
+.logo-black{
+	display: none;
 }
 .main-nav{
    float: right;
@@ -225,6 +232,44 @@ header{
   border-bottom: 2px solid #e67e22;   
 }
 
+/***** Sticky******/
+
+.sticky{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.96);
+	box-shadow: 0 2px 2px #efecec;
+	z-index: 9999;
+}
+.sticky .main-nav{
+   margin-top: 18px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    color: #555;  
+    padding: 16px 0;   
+}
+.sticky .logo{
+	display: none;
+}
+.sticky .logo-black{
+	display: block;
+	
+
+}
+.sticky .logo-black{
+	 height: 50px;
+    width: auto;
+    float: left;
+   margin-right: 50px;
+    margin: 5px 0;
+}
+.logo-black{
+	display: none;
+}
 /*-------------------------------*/
 /*--Meals-------*/
 /*-------------------------------*/
@@ -538,4 +583,32 @@ footer p{
 }
 .ion-social-instagram:hover{
 	color:  #c32aa3;
+}
+
+
+/*-------------------------------*/
+/*animations*/
+/*-------------------------------*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4{
+	opacity: 0;
+	animation-duration: 1s;
+}
+.js---wp-1.animated{
+	opacity: 1;
+}
+
+.js---wp-2.animated{
+	opacity: 1;
+}
+
+.js---wp-3.animated{
+	opacity: 1;
+}
+
+.js--wp-4.animated{
+	opacity: 1;
 }
